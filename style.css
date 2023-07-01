@@ -1,5 +1,5 @@
 html, body {
-
+    margin: auto;
   }
 h3{
     font-size: 14px;
@@ -18,10 +18,11 @@ h3{
 
 #header{
     grid-area: header;
+    border-bottom: 3px solid #B0ADAD;
     display: grid;
     padding: 10px;
-    background-color: red;
-    grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
+    background-color: #FAF9F9;
+    grid-template-columns: 0.5fr 4fr 1fr 1fr 1fr;
     grid-template-rows: 0.5fr 1fr;
     grid-template-areas: 'search-button search alert avatar username' ' secondary-avatar greeting new upload share';
     grid-gap: 5px;
@@ -29,33 +30,57 @@ h3{
 
 #sidebar{
     grid-area: sidebar;
-    background-color: yellow;
-    padding: 10px 0px;
+    color: #F7FFFF !important;
+    background-color: #57ADE0;
+    padding: 10px 10px;
+}
+
+.sidebar-text{
+    color: #F7FFFF !important;
 }
 
 #username{
     grid-area: username;
+    margin: 20px 0px;
+    font-weight: bold;
 }
 
 #alert{
     grid-area: alert;
+    margin:20px -70px 10px 10px;
+    text-align: right;
 }
 
 #avatar{
     grid-area: avatar;
+    background-color: #FFE939ed;
+    margin: 10px 100px;
+    padding: 10px 10px;
+    text-align: center;
+    border-radius: 25px;
 }
 
 #secondary-avatar{
     grid-area: secondary-avatar;
-    background-color: #0000ff;
+    background-color: #FFE939ed;
+    margin: 10px 0px 10px 30px;
+    padding: 10px 10px;
+    border-radius: 25px;
+    text-align: right;
 }
 
 #search-button{
     grid-area: search-button;
+    text-align: right;
+    margin: 20px 0px;
+    padding: 0px 10px;
 }
 
 #search{
     grid-area: search;
+    background-color: #D1CFCF;
+    border-radius: 25px;
+    margin: 20px -70px 20px 0px;
 }
 
 #greeting{
@@ -70,28 +95,31 @@ h3{
 
 #new{
     grid-area: new;
-    background-color: #0000ff;
+    color: #FFFFFF;
+    background-color: #57ADE0;
     border-radius: 25px;
     margin: auto;
-    padding:10px 30px;
+    padding:10px 50px;
 }
 
 #upload{
     grid-area: upload;
-    background-color: #0000ff;
+    color: #FFFFFF;
+    background-color: #57ADE0;
     border-radius: 25px;
     text-align: center;
     margin: auto;
-    padding:10px 30px;
+    padding:10px 50px;
 }
 
 #share{
     grid-area: share;
-    background-color: #0000ff;
+    color: #FFFFFF;
+    background-color: #57ADE0;
     border-radius: 25px;
     text-align: center;
     margin: auto;
-    padding:10px 30px;
+    padding:10px 50px;
 }
 
 
@@ -104,7 +132,7 @@ h3{
 
 #content{
     grid-area: content;
-    background-color: green;
+    background-color: #B8C4C6;
     display: grid;
     padding: 20px;
     gap: 20px;
@@ -116,12 +144,11 @@ h3{
 
 #project-container{
     grid-area: project-container;
-    background-color: red;
 
 }
 
 #projects{
-    background-color: rgb(118, 175, 123);
+    background-color: #B8C4C6;
     display: grid;
     height: 95%;
     grid-template:  1fr 1fr 1fr / 1fr 1fr;
@@ -153,7 +180,8 @@ h3{
 
 #announcement-container{
     grid-area: announcement-container;
-    background-color: rgb(52, 55, 142);
+    background-color: #B8C4C6;
+    font-weight: bold;
 
 }
 
@@ -162,13 +190,16 @@ h3{
     grid-template-rows: 1fr 1fr 1fr;
     margin: 20px;
     padding: 5px;
-    background-color: red;
+    background-color: #FAF9F9;
     font-size: 10px;
+    padding: 20px;
+    font-weight: 100;
 }
 
 #trending-container{
     grid-area: trending-container;
-    background-color: rgb(125, 24, 105);
+    background-color: #B8C4C6;
+    font-weight: bold;
 
 }
 
@@ -177,6 +208,8 @@ h3{
     grid-template-rows: 1fr 1fr 1fr;
     margin: 10px;
     padding: 5px;
-    background-color: red;
+    background-color: #FAF9F9;
     font-size: 10px;
+    padding: 20px;
+    font-weight: 100;
 }
