@@ -1,6 +1,14 @@
 html, body {
-    margin: auto;
+    margin: 0px;
+    padding: 0px;
   }
+
+h2{
+    font-weight: bold;
+    padding: 5px;
+    margin: 0px;
+    font-size: 16px;
+}
 h3{
     font-size: 14px;
 }
